@@ -13,6 +13,29 @@
         </div>
       </div>
       <!-- /#site_header -->
+
+      <section id="site_footer">
+        <div class="container">
+          <div class="row flex-column">
+            <div class="col">
+              <div class="row">
+                <div class="col">ciao</div>
+                <!-- /.col -->
+                <div class="col">ciao</div>
+                <!-- /.col -->
+                <div class="col">ciao</div>
+                <!-- /.col -->
+                <div class="col">ciao</div>
+                <!-- /.col -->
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col">ciao</div>
+            <!-- /.col -->
+          </div>
+        </div>
+      </section>
+      <!-- /#site_footer -->
   </div>
 </template>
 
