@@ -4,20 +4,17 @@
       <div id="menu" class="bg-mare">
         <div class="container">
           <div class="row">
-            <div class="col">
-              <p>Everything about Lifestyle, Travel and Gadgets!</p>
-              <div class="menu">
-                <ul>
+            <div class="col d-flex p-3 text-light">
+              <p class="m-0">Everything about Lifestyle, Travel and Gadgets!</p>
+                <ul class="m-0 d-flex">
                   <li
-                    class="text-uppercase"
+                    class="text-uppercase ms-3"
                     v-for="(listitem, index) in menu"
                     :key="index"
                   >
-                    <a :href="listitem.id">{{ listitem.point }}</a>
+                    <a class="text-light" :href="listitem.id">{{ listitem.point }}</a>
                   </li>
                 </ul>
-              </div>
-              <!-- /.menu -->
             </div>
             <!-- /.col -->
           </div>
