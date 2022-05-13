@@ -3,7 +3,17 @@
       <div id="site_header">
         <div class="container">
           <div class="row flex-column">
-            <div class="col">ciao</div>
+            <div class="col">
+              <p>Everything about Lifestyle, Travel and Gadgets!</p>
+              <div class="menu">
+                <ul>
+                  <li class="text-uppercase" v-for="(listitem, index) in menu" :key="index">
+                    {{listitem.point}}
+                  </li>
+                </ul>
+              </div>
+              <!-- /.menu -->
+            </div>
             <!-- /.col -->
             <div class="col">ciao</div>
             <!-- /.col -->
@@ -50,6 +60,26 @@ export default {
     //SiteHeader,
     //SiteMain,
     //SiteFooter,
+  },
+  data() {
+    return {
+      menu: [
+        {
+          id: 1,
+          point: 'sign in'
+        },
+        {
+          id: 2,
+          point: 'about us'
+        },{
+          id: 3,
+          point: 'contact us'
+        },{
+          id: 4,
+          point: 'buy now'
+        },
+      ]
+    }
   }
 }
 </script>
