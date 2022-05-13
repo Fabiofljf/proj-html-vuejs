@@ -5,10 +5,10 @@
         <div class="container">
           <div class="row">
             <div class="col d-flex py-3 text-light">
-              <p class="m-0">Everything about Lifestyle, Travel and Gadgets!</p>
+              <p class="m-0 size-12">Everything about Lifestyle, Travel and Gadgets!</p>
               <ul class="m-0 d-flex">
                 <li
-                  class="text-uppercase ms-3"
+                  class="text-uppercase ms-3 size-12 bold"
                   v-for="(listitem, index) in menu"
                   :key="index"
                 >
@@ -36,7 +36,7 @@
             <div class="col">
               <ul class="m-0 ps-0 py-3 d-flex">
                 <li
-                  class="text-uppercase me-3"
+                  class="text-uppercase me-3 bold"
                   v-for="(nav, index) in navBarMenu"
                   :key="index"
                 >
@@ -310,59 +310,6 @@ export default {
 </script>
 
 <style lang="scss">
-.bg-footer {
-  background-color: $Bg-footer;
-}
-
-.bg-info_footer {
-  background-color: $Bg-info_footer;
-}
-
-.special_padding {
-  padding: 50px 0 150px;
-}
-
-#footer {
-  li {
-    img {
-      border-radius: 50%;
-    }
-  }
-  p {
-    a {
-      color: $C-s-grey;
-    }
-  }
-  .categories {
-    background-color: $Bg-dark;
-    color: $C-light;
-    padding: 5px 10px;
-    margin: 10px 10px 10px 0px;
-    border-radius: 5px;
-    width: fit-content;
-    a{
-      color: $C-light;
-    }
-  }
-}
-
-#info_footer {
-  img {
-    width: 100px;
-    padding: 50px 20px 50px 0px;
-    filter: grayscale(1);
-  }
-  .flex-grow-4 {
-    flex-grow: 4;
-  }
-  p {
-    color: $C-s-grey;
-    margin-bottom: 0;
-    a {
-      color: $C-s-grey;
-    }
-  }
-}
 
 @import "@/assets/scss/style.scss"; // - Import style.scss
 </style>

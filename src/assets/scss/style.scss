@@ -3,10 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 img {
-    max-width: 100%
+    max-width: 100%;
 }
 
 li {
@@ -17,9 +18,13 @@ a {
     text-decoration: none !important;
 }
 
+a:hover {
+    color: $C-mare !important;
+}
+
 // UTILITIES
 .bg-mare {
-    background-color: $Bg-mare
+    background-color: $Bg-mare;
 }
 
 .text-mare {
@@ -28,6 +33,20 @@ a {
 
 .text-xs-grey {
     color: $C-xs-grey;
+}
+
+//size
+.size-12 {
+    font-size: $Size-12;
+}
+
+.size-14 {
+    font-size: $Size-14;
+}
+
+//font-weigth
+.bold {
+    font-weight: bold;
 }
 
 // HEADER
@@ -40,7 +59,61 @@ a {
 
 // MAIN
 // FOOTER
+.bg-footer {
+    background-color: $Bg-footer;
+}
+
+.bg-info_footer {
+    background-color: $Bg-info_footer;
+}
+
+.special_padding {
+    padding: 50px 0 150px;
+}
+
+#footer {
+    li {
+        img {
+            border-radius: 50%;
+        }
+    }
+    p {
+        a {
+            color: $C-s-grey;
+        }
+    }
+    .categories {
+        background-color: $Bg-dark;
+        color: $C-light;
+        padding: 5px 10px;
+        margin: 10px 10px 10px 0px;
+        border-radius: 5px;
+        width: fit-content;
+        a {
+            color: $C-light;
+        }
+    }
+}
+
+#info_footer {
+    img {
+        width: 100px;
+        padding: 50px 20px 50px 0px;
+        filter: grayscale(1);
+    }
+    .flex-grow-4 {
+        flex-grow: 4;
+    }
+    p {
+        color: $C-s-grey;
+        margin-bottom: 0;
+        a {
+            color: $C-s-grey;
+        }
+    }
+}
+
 // sass di Bootstrap
-@import '~/node_modules/bootstrap/scss/bootstrap.scss';
+@import "~/node_modules/bootstrap/scss/bootstrap.scss";
 // Variables
-@import '@/assets/scss/partials/variables.scss';
+@import "@/assets/scss/partials/variables.scss";
