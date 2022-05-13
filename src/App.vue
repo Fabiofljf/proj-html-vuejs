@@ -1,8 +1,18 @@
 <template>
   <div id="app">
-    <div class="debug">
-      <div id="site_header"></div>
-    </div>
+      <div id="site_header">
+        <div class="container">
+          <div class="row flex-column">
+            <div class="col">ciao</div>
+            <!-- /.col -->
+            <div class="col">ciao</div>
+            <!-- /.col -->
+            <div class="col">ciao</div>
+            <!-- /.col -->
+          </div>
+        </div>
+      </div>
+      <!-- /#site_header -->
   </div>
 </template>
 
@@ -22,7 +32,5 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-}
+@import '@/assets/scss/style.scss'
 </style>
