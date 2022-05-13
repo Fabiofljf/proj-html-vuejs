@@ -18,13 +18,13 @@ a {
     text-decoration: none !important;
 }
 
-a:hover {
-    color: $C-mare !important;
-}
-
 // UTILITIES
 .bg-mare {
     background-color: $Bg-mare;
+}
+
+.text_dark {
+    color: $C-dark;
 }
 
 .text-mare {
@@ -33,6 +33,10 @@ a:hover {
 
 .text-xs-grey {
     color: $C-xs-grey;
+}
+
+.active {
+    color: $C-mare !important;
 }
 
 //size
@@ -50,10 +54,16 @@ a:hover {
 }
 
 // HEADER
-.navbar_menu {
+.logo_menu {
     img {
         width: 120px;
         padding: 50px 0;
+    }
+}
+
+.navbar_menu {
+    a:hover {
+        color: $C-mare !important;
     }
 }
 

@@ -5,7 +5,9 @@
         <div class="container">
           <div class="row">
             <div class="col d-flex py-3 text-light">
-              <p class="m-0 size-12">Everything about Lifestyle, Travel and Gadgets!</p>
+              <p class="m-0 size-12">
+                Everything about Lifestyle, Travel and Gadgets!
+              </p>
               <ul class="m-0 d-flex">
                 <li
                   class="text-uppercase ms-3 size-12 bold"
@@ -23,16 +25,25 @@
         </div>
       </div>
       <!-- /#menu -->
-      <div class="navbar_menu">
+
+      <div class="logo_menu border-bottom">
         <div class="container">
-          <div class="row flex-column">
-            <div class="col border-bottom">
+          <div class="row">
+            <div class="col">
               <img
                 src="./assets/img/logo-default-slim.png"
                 alt="logo-default"
               />
             </div>
-            <!-- /.col -->
+            <!-- /.col logo-->
+          </div>
+        </div>
+      </div>
+      <!-- /.logo_menu -->
+
+      <div class="navbar_menu">
+        <div class="container">
+          <div class="row">
             <div class="col">
               <ul class="m-0 ps-0 py-3 d-flex">
                 <li
@@ -40,11 +51,20 @@
                   v-for="(nav, index) in navBarMenu"
                   :key="index"
                 >
-                  <a class="text-dark" :href="nav.id">{{ nav.point }}</a>
+                  <a
+                    class="text_dark"
+                    :href="nav.id"
+                    :class="nav.point === 'home' ? 'active' : ''"
+                    >{{ nav.point }}</a
+                  >
                 </li>
               </ul>
             </div>
-            <!-- /.col -->
+            <!-- /.col navbar-->
+            <div class="col d-flex justify-content-end align-items-center">
+              <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+            </div>
+            <!-- /.col search-->
           </div>
         </div>
       </div>
@@ -310,6 +330,5 @@ export default {
 </script>
 
 <style lang="scss">
-
 @import "@/assets/scss/style.scss"; // - Import style.scss
 </style>
