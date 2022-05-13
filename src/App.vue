@@ -62,7 +62,7 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
                 aut ratione eos praesentium itaque!
               </p>
-              <br>
+              <br />
               <p class="text-xs-grey">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                 Aperiam porro distinctio adipisci accusamus deleniti.
@@ -73,11 +73,15 @@
             <div class="col">
               <h6 class="text-uppercase text-light">recent post</h6>
               <ul class="ps-0">
-                <li class="d-flex" v-for="(article, index) in articles" :key="index">
-                  <img :src="'./assets/img' + article.photo" alt="articolo">
+                <li
+                  class="d-flex"
+                  v-for="(article, index) in articles"
+                  :key="index"
+                >
+                  <img :src="'./assets/img' + article.photo" alt="articolo" />
                   <div class="text-ligth ps-2">
-                    <p class="text-light mb-0">{{article.description}}</p>
-                    <p class="text-light mb-0">{{article.date}}</p>
+                    <p class="text-light mb-0">{{ article.description }}</p>
+                    <p class="text-light mb-0">{{ article.date }}</p>
                   </div>
                 </li>
               </ul>
@@ -87,17 +91,31 @@
               <h6 class="text-uppercase text-light">recent comment</h6>
               <ul class="ps-0">
                 <li v-for="(comment, index) in recentComments" :key="index">
-                    <p class="text-light mb-0">
-                      <a href="#">>
-                        <span class="text-light">{{comment.name}}</span> commented on <span class="text-mare">{{comment.comment}}</span>
-                      </a>
-                    </p>
-                    <p class="text-light mb-0">{{comment.date}}</p>
+                  <p class="text-light mb-0">
+                    <a href="#"
+                      >>
+                      <span class="text-light">{{ comment.name }}</span>
+                      commented on
+                      <span class="text-mare">{{ comment.comment }}</span>
+                    </a>
+                  </p>
+                  <p class="text-light mb-0">{{ comment.date }}</p>
                 </li>
               </ul>
             </div>
-            <!-- /.col -->
-            <div class="col">ciao</div>
+            <!-- /.col recent comment -->
+            <div class="col">
+              <h6 class="text-uppercase text-light">categories</h6>
+              <div class="d-flex flex-wrap">
+                <div
+                  class="categories"
+                  v-for="(category, index) in categories"
+                  :key="index"
+                >
+                  <a :href="category.type">{{ category.type }}</a>
+                </div>
+              </div>
+            </div>
             <!-- /.col -->
           </div>
         </div>
@@ -207,31 +225,85 @@ export default {
       articles: [
         {
           id: 1,
-          photo: 'our-office-4-square.jpg',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing.',
-          date: '12.53 AM Dec 19th'
+          photo: "our-office-4-square.jpg",
+          description: "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+          date: "12.53 AM Dec 19th",
         },
         {
           id: 2,
-          photo: 'our-office-5-square.jpg',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing.',
-          date: '12.53 AM Dec 19th'
-        }
+          photo: "our-office-5-square.jpg",
+          description: "Lorem ipsum dolor sit, amet consectetur adipisicing.",
+          date: "12.53 AM Dec 19th",
+        },
       ],
       recentComments: [
         {
           id: 1,
-          name: 'John Doe',
-          comment: 'Lorem ipsum dolor sit amet.',
-          date: '12.53 AM Dec 19th'
+          name: "John Doe",
+          comment: "Lorem ipsum dolor sit amet.",
+          date: "12.53 AM Dec 19th",
         },
         {
           id: 2,
-          name: 'John Doe',
-          comment: 'Lorem ipsum dolor sit amet.',
-          date: '12.53 AM Dec 19th'
-        }
-      ]
+          name: "John Doe",
+          comment: "Lorem ipsum dolor sit amet.",
+          date: "12.53 AM Dec 19th",
+        },
+      ],
+      categories: [
+        {
+          id: 1,
+          type: "gadgets",
+        },
+        {
+          id: 2,
+          type: "photography",
+        },
+        {
+          id: 3,
+          type: "lifestyle",
+        },
+        {
+          id: 4,
+          type: "fashion",
+        },
+        {
+          id: 5,
+          type: "recipes",
+        },
+        {
+          id: 6,
+          type: "travel",
+        },
+        {
+          id: 7,
+          type: "business",
+        },
+        {
+          id: 8,
+          type: "architecture",
+        },
+        {
+          id: 9,
+          type: "reviews",
+        },
+        {
+          id: 10,
+          type: "sport",
+        },
+        {
+          id: 11,
+          type: "videos",
+        },
+        {
+          id: 12,
+          type: "technology",
+        },
+        {
+          id: 13,
+          type: "design",
+        },
+      ],
     };
   },
 };
@@ -250,15 +322,26 @@ export default {
   padding: 50px 0 150px;
 }
 
-#footer{
-  li{
-    img{
+#footer {
+  li {
+    img {
       border-radius: 50%;
     }
   }
-  p{
-    a{
+  p {
+    a {
       color: $C-s-grey;
+    }
+  }
+  .categories {
+    background-color: $Bg-dark;
+    color: $C-light;
+    padding: 5px 10px;
+    margin: 10px 10px 10px 0px;
+    border-radius: 5px;
+    width: fit-content;
+    a{
+      color: $C-light;
     }
   }
 }
