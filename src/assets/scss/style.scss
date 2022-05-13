@@ -22,7 +22,22 @@ a {
     background-color: $Bg-mare
 }
 
+.text-mare {
+    color: $C-mare;
+}
+
+.text-xs-grey {
+    color: $C-xs-grey;
+}
+
 // HEADER
+.navbar_menu {
+    img {
+        width: 120px;
+        padding: 50px 0;
+    }
+}
+
 // MAIN
 // FOOTER
 // sass di Bootstrap
