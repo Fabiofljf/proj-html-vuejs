@@ -4,7 +4,7 @@
       <div id="menu" class="bg-mare">
         <div class="container">
           <div class="row">
-            <div class="col d-flex p-3 text-light">
+            <div class="col d-flex py-3 text-light">
               <p class="m-0">Everything about Lifestyle, Travel and Gadgets!</p>
                 <ul class="m-0 d-flex">
                   <li
@@ -24,9 +24,21 @@
       <div class="navbar_menu">
         <div class="container">
           <div class="row flex-column">
-            <div class="col">ciao</div>
+            <div class="col border-bottom">
+              <img src="./assets/img/logo-default-slim.png" alt="logo-default">
+            </div>
             <!-- /.col -->
-            <div class="col">ciao</div>
+            <div class="col">
+              <ul class="m-0 ps-0 py-3 d-flex">
+                  <li
+                    class="text-uppercase me-3"
+                    v-for="(nav, index) in navBarMenu"
+                    :key="index"
+                  >
+                    <a class="text-dark" :href="nav.id">{{ nav.point }}</a>
+                  </li>
+                </ul>
+            </div>
             <!-- /.col -->
           </div>
         </div>
@@ -92,11 +104,47 @@ export default {
           point: "buy now",
         },
       ],
+      navBarMenu: [
+        {
+          id: "#home",
+          point: "home",
+        },
+        {
+          id: "#elements",
+          point: "elements",
+        },
+        {
+          id: "#features",
+          point: "features",
+        },
+        {
+          id: "#pages",
+          point: "pages",
+        },
+        {
+          id: "#portfolio",
+          point: "portfolio",
+        },
+        {
+          id: "#blog",
+          point: "blog",
+        },
+        {
+          id: "#shop",
+          point: "shop",
+        },
+      ]
     };
   },
 };
 </script>
 
 <style lang="scss">
-@import "@/assets/scss/style.scss";
+.navbar_menu{
+  img{
+    width: 120px;
+    padding: 50px 0;
+  }
+}
+@import "@/assets/scss/style.scss"; // - Import style.scss
 </style>
