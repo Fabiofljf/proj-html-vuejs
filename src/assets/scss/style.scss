@@ -9,9 +9,23 @@ img {
     max-width: 100%
 }
 
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
 // UTILITIES
+.bg-mare {
+    background-color: $Bg-mare
+}
+
 // HEADER
 // MAIN
 // FOOTER
 // sass di Bootstrap
 @import '~/node_modules/bootstrap/scss/bootstrap.scss';
+// Variables
+@import '@/assets/scss/partials/variables.scss';

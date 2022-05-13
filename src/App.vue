@@ -3,12 +3,12 @@
       <div id="site_header">
         <div class="container">
           <div class="row flex-column">
-            <div class="col">
+            <div class="col bg-mare">
               <p>Everything about Lifestyle, Travel and Gadgets!</p>
               <div class="menu">
                 <ul>
                   <li class="text-uppercase" v-for="(listitem, index) in menu" :key="index">
-                    {{listitem.point}}
+                    <a :href="listitem.id">{{listitem.point}}</a>
                   </li>
                 </ul>
               </div>
@@ -65,17 +65,17 @@ export default {
     return {
       menu: [
         {
-          id: 1,
+          id: '#sign_in',
           point: 'sign in'
         },
         {
-          id: 2,
+          id: '#about_us',
           point: 'about us'
         },{
-          id: 3,
+          id: '#contact_us',
           point: 'contact us'
         },{
-          id: 4,
+          id: '#buy_now',
           point: 'buy now'
         },
       ]
