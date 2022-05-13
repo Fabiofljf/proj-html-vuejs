@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <h1>Hello!</h1>
+    <div class="debug">
+      <div id="site_header"></div>
+    </div>
   </div>
 </template>
 
