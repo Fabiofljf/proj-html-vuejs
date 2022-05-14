@@ -89,19 +89,12 @@ a {
 
 // MAIN
 // FOOTER
-.bg-footer {
-    background-color: $Bg-footer;
-}
-
-.bg-info_footer {
-    background-color: $Bg-info_footer;
-}
-
 .special_padding {
     padding: 50px 0 100px;
 }
 
 #footer {
+    background-color: $Bg-dark-light;
     li {
         img {
             border-radius: 50%;
@@ -126,6 +119,7 @@ a {
 }
 
 #info_footer {
+    background-color: $Bg-xxl-grey;
     img {
         width: 100px;
         padding: 50px 20px 50px 0px;
