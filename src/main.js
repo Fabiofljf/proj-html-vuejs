@@ -19,6 +19,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faFolder } from '@fortawesome/free-solid-svg-icons'
 import { faComments } from '@fortawesome/free-solid-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -30,6 +31,7 @@ library.add(faUserSecret, faChevronRight)
 library.add(faUserSecret, faUser)
 library.add(faUserSecret, faFolder)
 library.add(faUserSecret, faComments)
+library.add(faUserSecret, faTwitter)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)

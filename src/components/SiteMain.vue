@@ -21,7 +21,7 @@
           </div>
           <!-- /.col arrow sx-->
           <div class="col-11">
-            <ul class="d-flex justify-content-around m-0">
+            <ul class="d-flex justify-content-between m-0 p-0">
               <li v-for="(categorie, index) in categories" :key="index">
                 <div class="categoryCard">
                   <a class="text-light" href="#">{{ categorie.type }}</a>
@@ -46,8 +46,8 @@
     <div id="downMain">
       <section id="postShare">
         <div class="container">
-          <div class="row flex-column">
-            <div class="col-9">
+          <div class="row">
+            <div class="col-9 flex-column">
               <div
                 class="card border-0 mb-2"
                 v-for="(postShare, index) in postsShare"
@@ -69,25 +69,32 @@
                       saepe cum. Esse natus ipsam quis aperiam aliquam. Veniam,
                       tempora ut culpa deserunt eligendi velit dolor qui.
                     </p>
-                    <div class="tagPost d-flex justify-content-between align-items-center">
+                    <div
+                      class="
+                        tagPost
+                        d-flex
+                        justify-content-between
+                        align-items-center
+                      "
+                    >
                       <div class="tag size-11 d-flex">
                         <div class="me-2">
                           <font-awesome-icon icon="fa-solid fa-user" />
                           By
                           <a href="#">
-                            {{postShare.artist}}
+                            {{ postShare.artist }}
                           </a>
                         </div>
                         <div class="me-2">
                           <font-awesome-icon icon="fa-solid fa-folder" />
                           <a href="#">
-                            {{postShare.category}}
+                            {{ postShare.category }}
                           </a>
                         </div>
                         <div class="me-2">
                           <font-awesome-icon icon="fa-solid fa-comments" />
                           <a href="#">
-                            {{postShare.comments}}
+                            {{ postShare.comments }}
                           </a>
                         </div>
                       </div>
@@ -100,7 +107,66 @@
               </div>
             </div>
             <!-- /.col Post shared-->
-            <div class="col"></div>
+            <div class="col">
+              <div class="twitter">
+                <div class="textSocial mb-2">Lastest from Twitter</div>
+                <ul class="ps-0">
+                  <li class="d-flex">
+                    <font-awesome-icon icon="fa-brands fa-twitter" />
+                    <div class="size-11 ps-2">
+                      <p class="mb-0 text-s-grey">
+                        We have just updated Porto Admin. Check the changelog
+                        for more infomartion.
+                      </p>
+                      <p class="text-mare mb-0">01:05 PM Sep 18th</p>
+                    </div>
+                  </li>
+                  <li class="d-flex">
+                    <font-awesome-icon icon="fa-brands fa-twitter" />
+                    <div class="size-11 ps-2">
+                      <p class="mb-0 text-s-grey">
+                        If you have any suggestions for the next updates, let us
+                        know.
+                      </p>
+                      <p class="text-mare mb-0">01:05 PM Sep 18th</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.twitter -->
+              <div class="instagram">
+                <div class="textSocial">Photo from Instagram</div>
+              </div>
+              <!-- /.instagram -->
+              <div class="tag">
+                <div class="textSocial">Tags</div>
+                <ul class="ps-0 d-flex">
+                  <li class="tags me-2">
+                    <a href="#"> Design </a>
+                  </li>
+                  <li class="tags me-2">
+                    <a href="#"> Brands </a>
+                  </li>
+                  <li class="tags me-2">
+                    <a href="#"> Video </a>
+                  </li>
+                  <li class="tags me-2">
+                    <a href="#"> Business </a>
+                  </li>
+                  <li class="tags">
+                    <a href="#"> Travel </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- /.tag -->
+              <div class="facebook">
+                <div class="textSocial mb-3">Find Us On Facebook</div>
+                <div>
+                  <a class="border-start border-5" href="#">Okler Themes</a>
+                </div>
+              </div>
+              <!-- /.facebook -->
+            </div>
             <!-- /.col info-->
           </div>
         </div>
@@ -241,21 +307,44 @@ export default {
         justify-content: center;
       }
     }
-    .tagPost{
+    .tagPost {
       margin-bottom: 15px;
-      .tag{
-        a{
+      .tag {
+        a {
           color: $C-mare;
         }
       }
-      .more{
+      .more {
         padding: 0 5px;
-        a{
+        a {
           color: $C-xs-grey;
           font-size: 10px;
-          text-transform: uppercase;  
+          text-transform: uppercase;
         }
       }
+    }
+  }
+  .textSocial {
+    text-transform: uppercase;
+    font-size: 12px !important;
+    font-weight: bold;
+  }
+  .tags {
+    a {
+      font-size: 9px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background-color: $Bg-dark;
+      color: $C-light;
+      padding: 5px;
+      border-radius: 15px;
+    }
+  }
+  .facebook{
+    a{
+      color: $C-mare;
+      font-size: 12px;
+      padding: 15px;
     }
   }
 }

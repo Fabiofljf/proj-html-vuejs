@@ -33,7 +33,7 @@
                   <p class="text-s-grey mb-0">{{ recentPost.date }}</p>
                 </div>
               </li>
-            </ul>
+          </ul>
         </div>
         <!-- /.col recent post -->
         <div class="col d-flex flex-column">
