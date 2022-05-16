@@ -282,7 +282,8 @@ a {
     img {
         width: 100px;
         padding: 50px 20px 50px 0px;
-        filter: grayscale(1);
+        margin-right: 20px;
+        filter: brightness(0.3);
     }
     .flex-grow-4 {
         flex-grow: 4;

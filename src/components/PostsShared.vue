@@ -26,20 +26,20 @@
           >
             <div class="tag size-11 d-flex">
               <div class="me-2">
-                <font-awesome-icon icon="fa-solid fa-user" />
+                <font-awesome-icon icon="fa-regular fa-user" />
                 By
                 <a href="#">
                   {{ postShare.artist }}
                 </a>
               </div>
               <div class="me-2">
-                <font-awesome-icon icon="fa-solid fa-folder" />
+                <font-awesome-icon icon="fa-regular fa-folder" />
                 <a href="#">
                   {{ postShare.category }}
                 </a>
               </div>
               <div class="me-2">
-                <font-awesome-icon icon="fa-solid fa-comments" />
+                <font-awesome-icon icon="fa-regular fa-comments" />
                 <a href="#">
                   {{ postShare.comments }}
                 </a>
@@ -52,6 +52,26 @@
         </div>
       </div>
     </div>
+    <div class="pages">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination my-2 justify-content-end">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+              <span aria-hidden="true">&lt;</span>
+            </a>
+          </li>
+          <li class="page-item"><a style="background-color:#0088CC;" class="page-link text-light" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+              <span aria-hidden="true">&gt;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /.pages -->
   </div>
   <!-- /.col Post shared-->
 </template>
