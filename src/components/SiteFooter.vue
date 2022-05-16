@@ -76,7 +76,7 @@
           <!-- /.col -->
         </div>
       </div>
-      <div class="getInTouch">Get in Tauch!</div>
+      <div class="getInTouch">Get in Touch!</div>
       <div class="triangolino"></div>
     </div>
     <!-- /#footer -->
@@ -217,23 +217,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-.getInTouch {
-  background-color: $Bg-mare;
-  color: $C-light;
-  width: fit-content;
-  padding: 10px;
-  position: absolute;
-  top: -15px;
-  left: 246px;
-}
-.triangolino {
-    border-top: 11px solid transparent;
-    border-left: 13px solid #0074AD;
-    border-bottom: 13px solid transparent;
-    position: absolute;
-    top: -14px;
-    left: 236px;
-    transform: rotate(45deg);
-    z-index: -1;
-}
 </style>

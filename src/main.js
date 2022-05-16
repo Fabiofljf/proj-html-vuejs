@@ -1,12 +1,16 @@
 import Vue from 'vue'
 import App from './App.vue'
 // - Import Font
+// poppins
 import "@fontsource/poppins"
 import "@fontsource/poppins/100.css" // - Thin
 import "@fontsource/poppins/400.css" // - Regular
 import "@fontsource/poppins/500.css" // - Medium
 import "@fontsource/poppins/600.css" // - SemiBold
 import "@fontsource/poppins/700.css" // - Bold
+// dancing
+import "@fontsource/dancing-script"
+import "@fontsource/dancing-script/400.css" // - Regular
 
 /* Font Awesome icons*/
 /* import the fontawesome core */
