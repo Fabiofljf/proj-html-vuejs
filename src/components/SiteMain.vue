@@ -136,6 +136,14 @@
               <!-- /.twitter -->
               <div class="instagram">
                 <div class="textSocial">Photo from Instagram</div>
+                <div class="d-flex flex-wrap my-2">
+                  <img src="@/assets/img/img1.jpg" alt="foto instagram">
+                  <img src="@/assets/img/img2.jpg" alt="foto instagram">
+                  <img src="@/assets/img/img3.jpg" alt="foto instagram">
+                  <img src="@/assets/img/img4.jpg" alt="foto instagram">
+                  <img src="@/assets/img/img5.jpg" alt="foto instagram">
+                  <img src="@/assets/img/img6.jpg" alt="foto instagram">
+                </div>
               </div>
               <!-- /.instagram -->
               <div class="tag">
@@ -167,7 +175,7 @@
               </div>
               <!-- /.facebook -->
             </div>
-            <!-- /.col info-->
+            <!-- /.col Social-->
           </div>
         </div>
       </section>
@@ -281,71 +289,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-#postShare {
-  padding: 30px 0 30px;
-  .card {
-    img {
-      height: 250px;
-      object-fit: cover;
-    }
-    p {
-      font-size: 14px;
-      color: $C-xs-grey;
-    }
-    .calendary {
-      .day {
-        background-color: $Bg-s-grey;
-        padding: 12px;
-      }
-      .month {
-        background-color: $Bg-dark;
-        color: $C-light;
-        font-size: 7px;
-        font-weight: bold;
-        padding: 2px;
-        display: flex;
-        justify-content: center;
-      }
-    }
-    .tagPost {
-      margin-bottom: 15px;
-      .tag {
-        a {
-          color: $C-mare;
-        }
-      }
-      .more {
-        padding: 0 5px;
-        a {
-          color: $C-xs-grey;
-          font-size: 10px;
-          text-transform: uppercase;
-        }
-      }
-    }
-  }
-  .textSocial {
-    text-transform: uppercase;
-    font-size: 12px !important;
-    font-weight: bold;
-  }
-  .tags {
-    a {
-      font-size: 9px;
-      font-weight: bold;
-      text-transform: uppercase;
-      background-color: $Bg-dark;
-      color: $C-light;
-      padding: 5px;
-      border-radius: 15px;
-    }
-  }
-  .facebook{
-    a{
-      color: $C-mare;
-      font-size: 12px;
-      padding: 15px;
-    }
-  }
-}
+
 </style>
