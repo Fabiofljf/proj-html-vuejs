@@ -278,6 +278,7 @@ a {
 
 #info_footer {
     background-color: $Bg-xxl-grey;
+    position: relative;
     img {
         width: 100px;
         padding: 50px 20px 50px 0px;
@@ -291,6 +292,17 @@ a {
         margin-bottom: 0;
         a {
             color: $C-s-grey;
+        }
+    }
+    .btnToUp {
+        background-color: $Bg-xl-grey;
+        padding: 10px 20px;
+        width: fit-content;
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        a {
+            color: $C-light;
         }
     }
 }

@@ -96,6 +96,11 @@
           </div>
         </div>
       </div>
+      <div class="btnToUp rounded-top">
+        <a href="#">
+          <font-awesome-icon icon="fa-solid fa-chevron-up" />
+        </a>
+      </div>
     </div>
     <!-- /#info_footer -->
   </section>
