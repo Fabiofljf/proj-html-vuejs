@@ -154,6 +154,25 @@ a {
     }
 }
 
+// barrCategory
+.categoryCard {
+    background-color: $Bg-dark-light;
+    width: fit-content;
+    padding: 10px 40px;
+    a {
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+#barraNav {
+    a {
+        color: black;
+    }
+}
+
+// posts
 // FOOTER
 .special_padding {
     padding: 50px 0 100px;
