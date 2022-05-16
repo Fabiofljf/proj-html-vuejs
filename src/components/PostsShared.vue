@@ -14,12 +14,12 @@
         <div class="textofPost d-flex flex-column border-bottom">
           <h4>{{ postShare.post }}</h4>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus
-            quia, eos enim facere nobis quae ipsa laborum a voluptates odit
-            tempora quod sit error maxime ad, libero unde praesentium non
-            voluptatum, reprehenderit repudiandae saepe cum. Esse natus ipsam
-            quis aperiam aliquam. Veniam, tempora ut culpa deserunt eligendi
-            velit dolor qui.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos,
+            numquam reprehenderit sit quam est ratione! Reiciendis quam nostrum
+            perspiciatis alias, eligendi laboriosam sequi? Maxime dolorem soluta
+            fuga est accusamus! Esse, culpa vel! Esse vero dolor temporibus sit!
+            Nobis laboriosam, esse quia rerum commodi eum ipsum eligendi? Rem
+            ipsa deleniti ipsum quo aperiam [...]
           </p>
           <div
             class="tagPost d-flex justify-content-between align-items-center"
@@ -60,7 +60,14 @@
               <span aria-hidden="true">&lt;</span>
             </a>
           </li>
-          <li class="page-item"><a style="background-color:#0088CC;" class="page-link text-light" href="#">1</a></li>
+          <li class="page-item">
+            <a
+              style="background-color: #0088cc"
+              class="page-link text-light"
+              href="#"
+              >1</a
+            >
+          </li>
           <li class="page-item"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item">
