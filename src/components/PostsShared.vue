@@ -123,7 +123,7 @@ export default {
         },
         {
           id: 5,
-          photo: require("@/assets/img/blog-58 (1).jpg"),
+          photo: require("@/assets/img/blog-555.png"),
           post: "10 Best Travel Tips After 5 Years Traveling The World",
           artist: "John Doe",
           category: "Travel, Lifestyle",

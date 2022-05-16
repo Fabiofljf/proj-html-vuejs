@@ -49,10 +49,10 @@
           <div class="row">
             <PostsShared />
             <div class="col">
-              <div class="twitter">
-                <div class="textSocial mb-2">Lastest from Twitter</div>
+              <div class="twitter mb-5">
+                <div class="textSocial mb-3">Lastest from Twitter</div>
                 <ul class="ps-0">
-                  <li class="d-flex">
+                  <li class="d-flex mb-4">
                     <font-awesome-icon icon="fa-brands fa-twitter" />
                     <div class="size-11 ps-2">
                       <p class="mb-0 text-s-grey">
@@ -75,7 +75,7 @@
                 </ul>
               </div>
               <!-- /.twitter -->
-              <div class="instagram">
+              <div class="instagram mb-4">
                 <div class="textSocial">Photo from Instagram</div>
                 <div class="d-flex flex-wrap my-2">
                   <img src="@/assets/img/img1.jpg" alt="foto instagram">
@@ -87,7 +87,7 @@
                 </div>
               </div>
               <!-- /.instagram -->
-              <div class="tag">
+              <div class="tag mb-5">
                 <div class="textSocial">Tags</div>
                 <ul class="ps-0 d-flex">
                   <li class="tags me-2">
