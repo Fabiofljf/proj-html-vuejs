@@ -16,6 +16,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faFolder } from '@fortawesome/free-solid-svg-icons'
+import { faComments } from '@fortawesome/free-solid-svg-icons'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -24,6 +27,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(faUserSecret, faMagnifyingGlass)
 library.add(faUserSecret, faChevronLeft)
 library.add(faUserSecret, faChevronRight)
+library.add(faUserSecret, faUser)
+library.add(faUserSecret, faFolder)
+library.add(faUserSecret, faComments)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
