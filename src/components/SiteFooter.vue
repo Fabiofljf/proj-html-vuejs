@@ -100,7 +100,7 @@
         </div>
       </div>
       <div class="btnToUp rounded-top">
-        <a href="#null">
+        <a href="#">
           <font-awesome-icon icon="fa-solid fa-chevron-up" />
         </a>
       </div>
