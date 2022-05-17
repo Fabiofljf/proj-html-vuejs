@@ -165,10 +165,17 @@ export default {
           id: 6,
           type: "travel",
         },
-      ]
+      ],
     };
   },
-  
+  methods: {
+    next() {
+      console.log("next");
+    },
+    prev() {
+      console.log("prev");
+    },
+  },
 };
 </script>
 
