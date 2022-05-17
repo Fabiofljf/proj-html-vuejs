@@ -165,26 +165,10 @@ export default {
           id: 6,
           type: "travel",
         },
-      ],
-      activeImage: 0,
+      ]
     };
   },
-  methods: {
-    next() {
-      console.log("next");
-      this.activeImage++;
-      if (this.activeImage === this.images.length) {
-        this.activeImage = 0;
-      }
-    },
-    prev() {
-      console.log("prev");
-      if (this.activeImage === 0) {
-        this.activeImage = this.images.length - 1;
-      }
-      this.activeImage--;
-    },
-  },
+  
 };
 </script>
 
