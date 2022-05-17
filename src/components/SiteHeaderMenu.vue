@@ -5,10 +5,10 @@
 <script>
 export default {
   name: "SiteHeader-Menu",
-  props:{
+  props: {
     nav_menu: String,
     id_menu: String,
-  }
+  },
 };
 </script>
 

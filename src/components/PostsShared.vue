@@ -28,25 +28,25 @@
               <div class="me-2">
                 <font-awesome-icon icon="fa-regular fa-user" />
                 By
-                <a href="#">
+                <a href="#null">
                   {{ postShare.artist }}
                 </a>
               </div>
               <div class="me-2">
                 <font-awesome-icon icon="fa-regular fa-folder" />
-                <a href="#">
+                <a href="#null">
                   {{ postShare.category }}
                 </a>
               </div>
               <div class="me-2">
                 <font-awesome-icon icon="fa-regular fa-comments" />
-                <a href="#">
+                <a href="#null">
                   {{ postShare.comments }}
                 </a>
               </div>
             </div>
             <div class="more border">
-              <a href="#">read more</a>
+              <a href="#null">read more</a>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@
       <nav aria-label="Page navigation example">
         <ul class="pagination my-2 justify-content-end">
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
+            <a class="page-link" href="#null" aria-label="Previous">
               <span aria-hidden="true">&lt;</span>
             </a>
           </li>
@@ -64,14 +64,14 @@
             <a
               style="background-color: #0088cc"
               class="page-link text-light"
-              href="#"
+              href="#null"
               >1</a
             >
           </li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#null">2</a></li>
+          <li class="page-item"><a class="page-link" href="#null">3</a></li>
           <li class="page-item">
-            <a class="page-link" href="#" aria-label="Next">
+            <a class="page-link" href="#null" aria-label="Next">
               <span aria-hidden="true">&gt;</span>
             </a>
           </li>

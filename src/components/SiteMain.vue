@@ -14,7 +14,7 @@
         <div class="row align-items-center">
           <div class="col">
             <div class="prev" @click="prev">
-              <a href="#">
+              <a href="#null">
                 <font-awesome-icon icon="fa-solid fa-chevron-left" />
               </a>
             </div>
@@ -24,7 +24,7 @@
             <ul class="d-flex justify-content-between m-0 p-0">
               <li v-for="(categorie, index) in categories" :key="index">
                 <div class="categoryCard">
-                  <a class="text-light" href="#">{{ categorie.type }}</a>
+                  <a class="text-light" href="#null">{{ categorie.type }}</a>
                 </div>
               </li>
             </ul>
@@ -32,7 +32,7 @@
           <!-- /.col menu-->
           <div class="col d-flex justify-content-end">
             <div class="next" @click="next">
-              <a href="#">
+              <a href="#null">
                 <font-awesome-icon icon="fa-solid fa-chevron-right" />
               </a>
             </div>
@@ -78,12 +78,12 @@
               <div class="instagram mb-4">
                 <div class="textSocial">Photo from Instagram</div>
                 <div class="d-flex flex-wrap my-2">
-                  <img src="@/assets/img/img1.jpg" alt="foto instagram">
-                  <img src="@/assets/img/img2.jpg" alt="foto instagram">
-                  <img src="@/assets/img/img3.jpg" alt="foto instagram">
-                  <img src="@/assets/img/img4.jpg" alt="foto instagram">
-                  <img src="@/assets/img/img5.jpg" alt="foto instagram">
-                  <img src="@/assets/img/img6.jpg" alt="foto instagram">
+                  <img src="@/assets/img/img1.jpg" alt="foto instagram" />
+                  <img src="@/assets/img/img2.jpg" alt="foto instagram" />
+                  <img src="@/assets/img/img3.jpg" alt="foto instagram" />
+                  <img src="@/assets/img/img4.jpg" alt="foto instagram" />
+                  <img src="@/assets/img/img5.jpg" alt="foto instagram" />
+                  <img src="@/assets/img/img6.jpg" alt="foto instagram" />
                 </div>
               </div>
               <!-- /.instagram -->
@@ -91,19 +91,19 @@
                 <div class="textSocial">Tags</div>
                 <ul class="ps-0 d-flex">
                   <li class="tags me-2">
-                    <a href="#"> Design </a>
+                    <a href="#null"> Design </a>
                   </li>
                   <li class="tags me-2">
-                    <a href="#"> Brands </a>
+                    <a href="#null"> Brands </a>
                   </li>
                   <li class="tags me-2">
-                    <a href="#"> Video </a>
+                    <a href="#null"> Video </a>
                   </li>
                   <li class="tags me-2">
-                    <a href="#"> Business </a>
+                    <a href="#null"> Business </a>
                   </li>
                   <li class="tags">
-                    <a href="#"> Travel </a>
+                    <a href="#null"> Travel </a>
                   </li>
                 </ul>
               </div>
@@ -111,7 +111,7 @@
               <div class="facebook">
                 <div class="textSocial mb-3">Find Us On Facebook</div>
                 <div>
-                  <a class="border-start border-5" href="#">Okler Themes</a>
+                  <a class="border-start border-5" href="#null">Okler Themes</a>
                 </div>
               </div>
               <!-- /.facebook -->
@@ -166,7 +166,7 @@ export default {
           type: "travel",
         },
       ],
-      activeImage: 0
+      activeImage: 0,
     };
   },
   methods: {

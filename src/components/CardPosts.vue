@@ -1,5 +1,5 @@
 <template>
-    <section id="cardPost">
+  <section id="cardPost">
     <div class="container">
       <div class="row row-cols-3">
         <div class="card" v-for="(card, index) in cardsPost" :key="index">
@@ -16,8 +16,8 @@
 
 <script>
 export default {
-    name: 'CardPosts',
-    data() {
+  name: "CardPosts",
+  data() {
     return {
       cardsPost: [
         {
@@ -59,9 +59,8 @@ export default {
       ],
     };
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-
 </style>

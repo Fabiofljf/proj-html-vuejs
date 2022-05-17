@@ -16,7 +16,7 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam
               porro distinctio adipisci accusamus deleniti.
             </p>
-            <a href="#" class="text-uppercase text-light size-12 semiBold"
+            <a href="null" class="text-uppercase text-light size-12 semiBold"
               >> view more</a
             >
           </div>
@@ -47,7 +47,7 @@
             <ul class="ps-0">
               <li v-for="(comment, index) in recentComments" :key="index">
                 <p class="mb-0 size-11">
-                  <a class="text-xs-grey" href="#">
+                  <a class="text-xs-grey" href="#null">
                     <span class="text-mare">> </span>
                     <span class="text-light">{{ comment.name }}</span>
                     commented on
@@ -73,13 +73,14 @@
               </div>
             </div>
           </div>
-          <!-- /.col -->
+          <!-- /.col categories -->
         </div>
       </div>
       <div class="getInTouch">Get in Touch!</div>
       <div class="triangolino"></div>
     </div>
     <!-- /#footer -->
+
     <div id="info_footer">
       <div class="container">
         <div class="row">
@@ -99,7 +100,7 @@
         </div>
       </div>
       <div class="btnToUp rounded-top">
-        <a href="#">
+        <a href="#null">
           <font-awesome-icon icon="fa-solid fa-chevron-up" />
         </a>
       </div>
