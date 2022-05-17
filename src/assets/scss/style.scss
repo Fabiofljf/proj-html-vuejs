@@ -132,7 +132,7 @@ a {
             width: calc(100% / 3 - 20px);
             margin: 10px;
             padding: 0;
-            border: 0;
+            border: 2px;
         }
     }
 }
@@ -164,6 +164,9 @@ a {
     background-color: $Bg-dark-light;
     width: fit-content;
     padding: 10px 40px;
+    &:hover {
+        box-shadow: inset 0px 0px 0px 5px $Bg-mare;
+    }
     a {
         font-size: 10px;
         font-weight: bold;
